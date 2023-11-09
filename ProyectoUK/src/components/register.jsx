@@ -1,14 +1,15 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css'
 
+
 export const Register = () => {
     return (
         <>
-            <main className="d-flex justify-content-center align-items-center">
+            <main className="container d-flex justify-content-center align-items-center">
                 <form id="formRegister" className="registerForm">
+                    <h2 className="mb-2">Regístrate</h2>
                     <div className="register">
-                        <h2 className="mb-2">Regístrate</h2>
-                        <label htmlFor="text" className="form-label">Nombre</label>
+                        <label htmlFor="name" className="form-label">Nombre</label>
                         <input type="text" id="name" name="name" required className="form-control mb-3" />
                         <label htmlFor="text" className="form-label">Apellido</label>
                         <input type="text" id="surname" name="surname" required className="form-control mb-3" />
@@ -32,5 +33,6 @@ export const Register = () => {
                 integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
                 crossOrigin="anonymous"></script>
         </>
-    )
+    );
 }
+

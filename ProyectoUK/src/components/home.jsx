@@ -1,25 +1,23 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import '../../public/css/home.css'
+
+
 export const Home = () => {
     return (
         <>
-            <h1 className="title">Bienvenido a University of Knowledge</h1>
-            <main className="mt-5 mb-5">
+            <h1 className="title text-center">Bienvenido a University of Knowledge</h1>
+            <main className="container mt-5">
 
-
-                <article className="section mt-2 mb-2">
+                <article className="section mt-2 mb-2 text-center">
                     <div>
-                        <img src="../public/img/Institute.png" alt="Institute" width="300"/>
-
+                        <img src="../public/img/Institute.png" alt="Institute" width="300" />
                         <p className="p-3 m-0">
                             Tu fuente confiable de información académica actualizada. Descubre oportunidades de estudio, carreras y
-                            recursos
-                            para tu éxito educativo. ¡Explora y forja tu camino hacia un futuro prometedor en el mundo del conocimiento!
+                            recursos para tu éxito educativo. ¡Explora y forja tu camino hacia un futuro prometedor en el mundo del conocimiento!
                         </p>
                     </div>
                 </article>
-
 
                 <article className="reseñas-cuadro mt-5 mb-5">
                     <h2>Algunas reseñas</h2>
@@ -66,8 +64,7 @@ export const Home = () => {
                         </div>
                     </div>
                 </article>
-
             </main>
         </>
-    )
+    );
 }

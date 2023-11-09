@@ -1,7 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300);
+
 body {
   font-family: "Alegreya Sans", sans-serif;
   background: linear-gradient(#88b5d8, #899faf, #a7b8c5, white);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 main {
@@ -14,6 +17,7 @@ main {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
   margin-right: 10%;
   margin-left: 10%;
+  margin-top: 5%;
 }
 
 nav {
@@ -29,7 +33,7 @@ footer {
 }
 
 .title {
-  display: flex;
+  display: flex;  
   justify-content: center;
   align-items: center;
   color: #ffffff;
@@ -94,16 +98,10 @@ footer {
   align-items: center;
 }
 
-.nav-link {
-  font-size: 15px;
+.nav-link { 
+  font-size: 20px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  transition: 0.6s;
-}
-
-.nav-link:hover {
-  transition: 0.6s;
-  transform: scale(1.5);
+  justify-content: center;
+  margin: 20px;
 }
 

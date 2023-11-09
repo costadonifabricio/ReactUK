@@ -4,7 +4,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 export const Faq = () => {
     return (
         <>
-            <header id="cabecera" className="d-flex justify-content-between align-content-center">
+            <header className="header">
                 <nav aria-label="breadcrumb d-flex align-content-center">
                     <ol className="breadcrumb p-2 m-0 ps-3 d-flex justify-content-between">
                         <li className="breadcrumb-item">
@@ -12,17 +12,12 @@ export const Faq = () => {
                                 <div className="logo"></div>
                             </a>
                         </li>
-                        <li className="breadcrumb-item active" aria-current="page">Preguntas frecuentes</li>
                     </ol>
                 </nav>
-                <div className="preguntas-frecuentes">
-                    <a href="/preguntas"><img src="../public/img/question-mark-vector-icon.png" style={{ width: '30px' }} alt="Ayuda" />
-                    </a>
-                </div>
             </header>
 
-            <main>
-                <div className="container mt-3">
+            <main className="container mt-5">
+                <div className="container mt-5">
                     <h2>Preguntas Frecuentes</h2>
 
 
@@ -217,5 +212,5 @@ export const Faq = () => {
                 </div>
             </main>
         </>
-    )
+    );
 }
