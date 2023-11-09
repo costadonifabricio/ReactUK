@@ -31,7 +31,7 @@ export const Login = () => {
                         </div>
 
                         <div className="d-flex justify-content-center">
-                            <a href="/registrate" className="btn mt-3 btn-outline-success">Crear cuenta nueva</a>
+                            <a href="/registro" className="btn mt-3 btn-outline-success">Crear cuenta nueva</a>
                         </div>
                     </form>
                 </div>

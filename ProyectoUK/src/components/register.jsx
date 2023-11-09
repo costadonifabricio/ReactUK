@@ -22,7 +22,7 @@ export const Register = () => {
                         <button type="submit" className="btn btn-success w-100 mb-3">Registrar</button>
                         <div className="d-flex flex-column justify-content-center align-items-center">
                             <p className="m-1">¿Ya tenés una cuenta?</p>
-                            <a href="/iniciar-sesion" className="btn btn-outline-primary w-50">Inicia sesión</a>
+                            <a href="/iniciar" className="btn btn-outline-primary w-50">Inicia sesión</a>
                         </div>
                     </div>
                 </form>

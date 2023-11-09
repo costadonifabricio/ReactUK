@@ -22,7 +22,7 @@ export const Nav = () => {
                         </a>
                     </div>
                     <div>
-                        <a href="/iniciar-sesion" className="material-symbols-outlined">
+                        <a href="/iniciar" className="material-symbols-outlined">
                             login
                         </a>
                     </div>

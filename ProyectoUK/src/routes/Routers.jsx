@@ -7,6 +7,7 @@ import { InicioSesion } from "../pages/iniciosesion";
 import { RegistroAdminPage } from "../pages/registroAdmin";
 import { RegistroCarrera } from "../pages/registroInstituto";
 import { RegistroInstituto } from "../pages/registroCarrera";
+import { Trabaja } from "../pages/trabaja";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 export const Routers = () => {
     return (
@@ -21,6 +22,7 @@ export const Routers = () => {
                     <Route path="/registroAdmin" element={<RegistroAdminPage/>} />
                     <Route path="/registroCarrera" element={<RegistroCarrera/>} />
                     <Route path="/registroInstituto" element={<RegistroInstituto/>} />
+                    <Route path="/trabaja" element={<Trabaja/>} />
             </Routes>
         </BrowserRouter>
     )

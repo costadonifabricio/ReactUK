@@ -7,7 +7,7 @@ export const Footer = () => {
             <div className="container">
                 <div className="row">
                     <div className="col">
-                        <a href="/trabaja-con-nosotros" className="nav-link">Trabaja con nosotros</a>
+                        <a href="/trabaja" className="nav-link">Trabaja con nosotros</a>
                     </div>
                     <div className="col">
                         <a href="/preguntas" className="nav-link">Preguntas frecuentes</a>
