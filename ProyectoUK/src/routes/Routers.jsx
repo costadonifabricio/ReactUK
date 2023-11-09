@@ -5,8 +5,8 @@ import { Buscador } from "../pages/buscador";
 import { Registro } from "../pages/registro";
 import { InicioSesion } from "../pages/iniciosesion";
 import { RegistroAdminPage } from "../pages/registroAdmin";
-import { RegistroCarrera } from "../pages/registroInstituto";
-import { RegistroInstituto } from "../pages/registroCarrera";
+import { RegistroCarrera } from "../pages/registroCarrera";
+import { RegistroInstituto } from "../pages/registroInsti";
 import { Trabaja } from "../pages/trabaja";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 export const Routers = () => {

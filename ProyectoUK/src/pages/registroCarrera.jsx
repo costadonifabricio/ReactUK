@@ -1,11 +1,12 @@
-import { RegisterInstitute } from "../components/registerInstitute";
+import { RegisterCareer } from "../components/registerCareer";
 import { Footer } from "../components/footer";
 import { Nav } from "../components/nav";
-export const RegistroInstituto = () => {
+
+export const RegistroCarrera = () => {
     return (
         <>
             <Nav />
-            <RegisterInstitute />
+            <RegisterCareer />
             <Footer />
         </>
     )
