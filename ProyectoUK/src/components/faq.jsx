@@ -16,8 +16,8 @@ export const Faq = () => {
                 </nav>
             </header>
 
-            <main className="container mt-5">
-                <div className="container mt-5">
+            <main className="container mt-5 pb-3">
+                <div className="container mt-3">
                     <h2>Preguntas Frecuentes</h2>
 
 
