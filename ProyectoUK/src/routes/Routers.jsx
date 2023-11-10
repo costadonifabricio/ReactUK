@@ -4,7 +4,7 @@ import { Preguntas } from "../pages/preguntas";
 import { Buscador } from "../pages/buscador";
 import { Registro } from "../pages/registro";
 import { InicioSesion } from "../pages/iniciosesion";
-import { RegistroAdminPage } from "../pages/registroAdmin";
+// import { RegistroAdminPage } from "../pages/registroAdmin";
 import { RegistroCarrera } from "../pages/registroCarrera";
 import { RegistroInstituto } from "../pages/registroInsti";
 import { Trabaja } from "../pages/trabaja";
@@ -19,7 +19,7 @@ export const Routers = () => {
                     <Route path="/buscador" element={<Buscador/>} />
                     <Route path="/registro" element={<Registro/>} />
                     <Route path="/iniciar" element={<InicioSesion/>} />
-                    <Route path="/registroAdmin" element={<RegistroAdminPage/>} />
+                    {/* <Route path="/registroAdmin" element={<RegistroAdminPage/>} /> */}
                     <Route path="/registroCarrera" element={<RegistroCarrera/>} />
                     <Route path="/registroInstituto" element={<RegistroInstituto/>} />
                     <Route path="/trabaja" element={<Trabaja/>} />
