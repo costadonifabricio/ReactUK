@@ -1,56 +1,15 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css'
 
-import { useNavigate } from "react-router-dom"
-import { environments } from "../config/environments.js"
-import { useState, useEffect } from "react"
 
 export const RegisterInstitute = () => {
-    const navigate = useNavigate()
-    const [isLogged, setIsLogged] = useState(false)
-
-    useEffect(() => {
-        if (localStorage.getItem('token')) {
-            setIsLogged(true)
-        }
-    }, [])
-
-    const handleSubmit = async (e) => {
-        e.preventDefault()
-        const data = new FormData(e.target)
-        const name = data.get('name')
-        const abbreviation = data.get('abbreviation')
-        const year_fundation = data.get('year_fundation')
-        const description = data.get('description')
-
-        const body = {
-            name,
-            abbreviation,
-            year_fundation,
-            description
-        }
-
-        const response = await fetch(`${environments.API_URL}/api/nueva-institucion`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(body)
-        })
-
-        const result = await response.json()
-
-        if (result.ok) {
-            navigate('/admin')
-        }
-    }
 
 
     return (
         <>
                 <main className='container d-flex justify-content-center align-items-center'>
                     <form className="formAgregarInstituto p-3 needs-validation" noValidate id="formAgregarInstituto"
-                        data-id="<%- id_user %>" onSubmit={handleSubmit}>
+                        data-id="<%- id_user %>">
                         <h2 className="">Registra tu institución</h2>
                         <div className="nombres mb-3">
                             <div className="nombre me-3">

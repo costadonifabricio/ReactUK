@@ -1,56 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css'
 
-import { useNavigate } from "react-router-dom"
-import { environments } from "../config/environments.js"
-import { useState, useEffect } from "react"
 
 export const RegistroAdmin = () => {
-    const navigate = useNavigate()
-    const [isLogged, setIsLogged] = useState(false)
-
-    useEffect(() => {
-        if (localStorage.getItem('token')) {
-            setIsLogged(true)
-        }
-    }, [])
-
-    const handleSubmit = async (e) => {
-        e.preventDefault()
-        const data = new FormData(e.target)
-        const name = data.get('name')
-        const surname = data.get('surname')
-        const email = data.get('email')
-        const password = data.get('password')
-        const isAdmin = data.get('isAdmin')
-
-        const body = {
-            name,
-            surname,
-            email,
-            password,
-            isAdmin
-        }
-
-        const response = await fetch(`${environments.API_URL}/api/register`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(body)
-        })
-
-        const result = await response.json()
-
-        if (result.ok) {
-            navigate('/admin')
-        }
-    }
 
     return (
         <>
                 <main className="container d-flex justify-content-center align-items-center">
-                    <form id="formRegister" className="registerForm" onSubmit={handleSubmit}>
+                    <form id="formRegister" className="registerForm">
                         <div className="register">
                             <h2>Registrar un usuario</h2>
                             <label htmlFor="name" className="form-label">Nombre</label>
